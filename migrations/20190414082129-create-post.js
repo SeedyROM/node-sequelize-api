@@ -23,7 +23,7 @@ module.exports = {
       type: Sequelize.DATE,
     },
     UserId: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.UUID,
       onDelete: 'CASCADE',
       allowNull: false,
       references: {
