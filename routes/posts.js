@@ -11,8 +11,12 @@ router.get('/', async (req, res) => {
 
 // Create
 router.post('/', async (req, res) => {
-  const payload = PostController.create(req.body);
-  res.send(payload);
+  try {
+    const payload = await PostController.create(req.body);
+    res.send(payload);
+  } catch (e) {
+    throw e;
+  }
 });
 
 // Retrieve

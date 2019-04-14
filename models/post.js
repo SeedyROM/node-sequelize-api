@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     Post.belongsTo(models.User, {
       onDelete: 'CASCADE',
       foreignKey: {
-        allowNull: false,
+        allowNull: true,
       },
     });
   };
