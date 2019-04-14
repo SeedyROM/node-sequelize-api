@@ -1,10 +1,10 @@
 const uuid = require('uuid/v4');
-const Sequelize = require('sequelize');
+const { DataTypes } = require('sequelize');
 
 const uuidPrimaryKey = () => ({
+  allowNull: true,
   primaryKey: true,
-  type: Sequelize.UUID,
-  allowNull: false,
+  type: DataTypes.UUID,
   defaultValue: () => uuid(),
 });
 
