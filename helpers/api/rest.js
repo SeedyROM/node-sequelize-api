@@ -2,12 +2,11 @@ const defaultOptions = {
   include: [],
 };
 
-const restController = (Model, options = defaultOptions) => ({
+const resourceController = (Model, options = defaultOptions) => ({
   async fetchAll() {
     const results = await Model.findAll({
       ...options,
     });
-
     return results;
   },
   async fetch(primaryKey) {
@@ -17,9 +16,12 @@ const restController = (Model, options = defaultOptions) => ({
         [Model.primaryKeyAttributes[0]]: primaryKey,
       },
     });
-
     return result;
+  },
+  async create(fields) {
+    const instance = await Model.create(fields);
+    return instance;
   },
 });
 
-module.exports = restController;
+module.exports = resourceController;

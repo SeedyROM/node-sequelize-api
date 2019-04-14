@@ -1,5 +1,7 @@
 const { User, Post } = require('../models');
 
-const restController = require('../helpers/api/rest');
+const resourceController = require('../helpers/api/rest');
 
-module.exports = restController(Post, [User]);
+module.exports = resourceController(Post, {
+  include: [User],
+});

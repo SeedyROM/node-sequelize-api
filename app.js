@@ -1,6 +1,6 @@
-const createError = require('http-errors');
 const express = require('express');
 require('express-async-errors');
+const createError = require('http-errors');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
