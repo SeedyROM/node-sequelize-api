@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     const payload = await PostController.create(req.body);
     res.send(payload);
   } catch (e) {
-    throw e;
+    res.send(e);
   }
 });
 
