@@ -1,9 +1,11 @@
 const createError = require('http-errors');
 const express = require('express');
+require('express-async-errors');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const postRouter = require('./routes/posts');
 
 const app = express();
 
@@ -12,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
+app.use('/posts', postRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

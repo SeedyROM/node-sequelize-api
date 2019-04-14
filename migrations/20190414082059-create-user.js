@@ -1,11 +1,8 @@
+const uuidPrimaryKey = require('../helpers/db/uuid');
+
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('Users', {
-    id: {
-      allowNull: false,
-      autoIncrement: true,
-      primaryKey: true,
-      type: Sequelize.INTEGER,
-    },
+    id: uuidPrimaryKey(),
     username: {
       allowNull: false,
       type: Sequelize.STRING,
