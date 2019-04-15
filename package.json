@@ -5,6 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "serve": "pm2 start ./bin/www",
+    "monitor": "pm2 monit",
     "down": "pm2 stop www"
   },
   "dependencies": {
