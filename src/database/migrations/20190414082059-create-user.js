@@ -1,4 +1,4 @@
-const uuidPrimaryKey = require('../../helpers/db/uuid');
+const uuidPrimaryKey = require('../../helpers/database/uuid');
 
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('Users', {

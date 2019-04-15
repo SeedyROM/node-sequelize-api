@@ -10,7 +10,7 @@
 const debug = require('debug')('express-sequelize');
 const http = require('http');
 const app = require('../src/app');
-const models = require('../src/db/models');
+const models = require('../src/database/models');
 
 /**
  * Get port from environment and store in Express.
