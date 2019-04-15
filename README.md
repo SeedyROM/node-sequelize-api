@@ -26,12 +26,12 @@ This project is my attempt at making a semi sane boilerplate working with RBDMS 
 * Clone this repository:
   * `git clone https://github.com/SeedyROM/node-sequelize-api`
   * or to rename it something else `git clone https://github.com/SeedyROM/node-sequelize-api myproject`
-* Then change directories (`cd`) into the cloned repo.
-* Run `yarn install` or just `yarn` to install dependencies.
+* Then change directories (`cd`) into the cloned repo
+* Run `yarn install` or just `yarn` to install dependencies
 * Migrate the initial example migrations into the local sqlite development database:
   * `yarn run sequelize db:migrate`
   * You can use `yarn run sequelize ...` to call any `sequelize-cli` commmand you need
-* Then run yarn
+* Then run `yarn start` to start a local development server
 
 ## Contributing
 
