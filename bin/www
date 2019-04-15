@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 /* eslint-disable no-use-before-define */
+/* eslint-disable no-console */
 
 /**
  * Module dependencies.
@@ -8,8 +9,8 @@
 
 const debug = require('debug')('express-sequelize');
 const http = require('http');
-const app = require('../app');
-const models = require('../models');
+const app = require('../src/app');
+const models = require('../src/database/models');
 
 /**
  * Get port from environment and store in Express.
