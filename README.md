@@ -1,4 +1,4 @@
-<center>
+<div align="center">
   <h1>SimpleAPI <small>(node, express, sequelize)</small></h1>
   <p>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" width="200">
@@ -10,4 +10,4 @@
       <i>Mostly a learning tool for me, so take this as is.</i>
     </h5>
   </p>
-</center>
+</div>
