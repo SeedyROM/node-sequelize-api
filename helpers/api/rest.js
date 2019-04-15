@@ -24,7 +24,7 @@ const restRoutes = (ModelController) => {
   router.post('/', async (req, res) => {
     try {
       const payload = await ModelController.create(req.body);
-      res.send(payload);
+      res.status(201).send(payload);
     } catch (e) {
       res.status(500).send(e);
     }
@@ -34,7 +34,7 @@ const restRoutes = (ModelController) => {
   router.patch('/:id', async (req, res) => {
     try {
       const payload = await ModelController.update(req.params.id, req.body);
-      res.send(payload);
+      res.status(204).send(payload);
     } catch (e) {
       res.status(500).send(e);
     }
