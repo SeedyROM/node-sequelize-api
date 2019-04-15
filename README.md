@@ -16,6 +16,11 @@
 
 This project is my attempt at making a semi sane boilerplate working with RBDMS in Node. And tools / helpers to create an example REST api with JWT authentication. *(JWT is not implemented yet)*
 
+### Databases used per environment:
+* SQLite for `development`
+* SQLite in memory for `test`
+* Any adapter for `production`, this is specified in the `config/config.js` file, default is `postgres`
+
 ## Getting started
 
 * Clone this repository:
@@ -23,7 +28,7 @@ This project is my attempt at making a semi sane boilerplate working with RBDMS 
   * or to rename it something else `git clone https://github.com/SeedyROM/node-sequelize-api myproject`
 * Then change directories (`cd`) into the cloned repo.
 * Run `yarn install` or just `yarn` to install dependencies.
-* Migrate the intiial example migrations into the local sqlite development database:
+* Migrate the initial example migrations into the local sqlite development database:
   * `yarn run sequelize db:migrate`
   * You can use `yarn run sequelize ...` to call any `sequelize-cli` commmand you need
 * Then run yarn
