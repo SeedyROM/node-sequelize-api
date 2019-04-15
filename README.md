@@ -14,7 +14,7 @@
 
 ## Overview
 
-This project is my attempt at making a semi sane boilerplate working with RBDMS in Node. It also includes tools / helpers to create an example REST api with JWT authentication. *(JWT is not implemented yet)*
+This project is my attempt at making a semi sane boilerplate working with RDBMS' in Node. It also includes tools / helpers to create an example REST api with JWT authentication. *(JWT is not implemented yet)*
 
 ### Databases used per environment:
 * SQLite for `development`
