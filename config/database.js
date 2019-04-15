@@ -1,20 +1,18 @@
-const options = {
-  'migrations-path': '../src/db/migrations',
-};
+const globalConfig = {};
 
 module.exports = {
   development: {
-    ...options,
+    ...globalConfig,
     dialect: 'sqlite',
     storage: './db.development.sqlite',
   },
   test: {
-    ...options,
+    ...globalConfig,
     dialect: 'sqlite',
     storage: ':memory:',
   },
   production: {
-    ...options,
+    ...globalConfig,
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
