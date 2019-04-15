@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User } = require('../db/models');
 
 const resourceController = require('../helpers/api/resource');
 

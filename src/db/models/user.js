@@ -1,4 +1,4 @@
-const uuidPrimaryKey = require('../helpers/db/uuid');
+const uuidPrimaryKey = require('../../helpers/db/uuid');
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
